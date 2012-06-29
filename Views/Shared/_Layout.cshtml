@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title</title>   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+     
+    <link href="@Url.Content("~/Content/bootstrap/css/bootstrap.css")" rel="stylesheet"/>
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+    </style>
+    <link href="@Url.Content("~/Content/bootstrap/css/bootstrap-responsive.css")" rel="stylesheet">
+
+     <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="@Url.Content("~/Content/bootstrap/ico/favicon.ico")">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="@Url.Content("~/Content/bootstrap/ico/apple-touch-icon-144-precomposed.png")">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="@Url.Content("~/Content/bootstrap/ico/apple-touch-icon-114-precomposed.png")">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="@Url.Content("~/Content/bootstrap/ico/apple-touch-icon-72-precomposed.png")">
+    <link rel="apple-touch-icon-precomposed" href="@Url.Content("~/Content/bootstrap/ico/apple-touch-icon-57-precomposed.png")">
+</head>
+<body>
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <h3><a class="brand" href="#">TwitterBootstrap ASP.NET MVC3</a></h3>
+                <ul class="nav">
+                    <li class="active">@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                </ul>
+                <ul class="nav secondary-nav">
+                    <li>@Html.Partial("_LogOnPartial")</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        @RenderBody()
+        <footer class="footer">
+            <p>&copy; Company 2011</p>
+        </footer>
+    </div> <!-- /container --> 
+</body>
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="@Url.Content("~/Content/bootstrap/js/jquery.js")"></script>
+    <script src="@Url.Content("~/Content/bootstrap/js/bootstrap-transition.js")"></script>
+    <script src="@Url.Content("~/Content/bootstrap/js/bootstrap-alert.js")"></script>
+    <script src="@Url.Content("~/Content/bootstrap/js/bootstrap-modal.js")"></script>
+    <script src="@Url.Content("~/Content/bootstrap/js/bootstrap-dropdown.js")"></script>
+    <script src="@Url.Content("~/Content/bootstrap/js/bootstrap-scrollspy.js")"></script>
+    <script src="@Url.Content("~/Content/bootstrap/js/bootstrap-tab.js")"></script>
+    <script src="@Url.Content("~/Content/bootstrap/js/bootstrap-tooltip.js")"></script>
+    <script src="@Url.Content("~/Content/bootstrap/js/bootstrap-popover.js")"></script>
+    <script src="@Url.Content("~/Content/bootstrap/js/bootstrap-button.js")"></script>
+    <script src="@Url.Content("~/Content/bootstrap/js/bootstrap-collapse.js")"></script>
+    <script src="@Url.Content("~/Content/bootstrap/js/bootstrap-carousel.js")"></script>
+    <script src="@Url.Content("~/Content/bootstrap/js/bootstrap-typeahead.js")"></script>
+
+</html>
